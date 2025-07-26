@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: #001c48;
+}
+
+.film-border {
+  border: 20px solid #000;
+  border-image: repeating-linear-gradient(#ccc 0 20px, #000 20px 40px) 20;
+  padding: 20px;
+  background-color: #f0f0f0;
+  max-width: 900px;
+  margin: auto;
+}
+
+
+.titulo {
+  background-color: #ff7f2a;
+  color: #001c48;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titulo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.titulo span {
+  color: #0033cc;
+}
+
+.icono {
+  width: 50px;
+  height: 70px;
+  background: url('https://cdn-icons-png.flaticon.com/512/476/476863.png') no-repeat center/contain;
+  margin: 0 auto 10px;
+}
+
+/* === Intro === */
+.intro {
+  text-align: justify;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+/* === Línea de películas === */
+.peliculas {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 10px;
+  border-left: 6px solid gold;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fila img {
+  width: 80px;
+  height: auto;
+  border: 2px solid #001c48;
+}
+
+.fila .estrella {
+  background: gold;
+  color: #001c48;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.fila p {
+  font-size: 14px;
+  flex: 1;
+  margin: 0;
+}
+
+/* === Dato === */
+.dato {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #e0e6f5;
+  border: 2px solid #0033cc;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #001c48;
+}
+
+.dato img {
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .fila {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fila img {
+    width: 60px;
+  }
+
+  .fila .estrella {
+    margin: 10px 0;
+  }
+
+  .dato {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dato img {
+    width: 40px;
+  }
+}
